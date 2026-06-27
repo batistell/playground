@@ -27,16 +27,14 @@ public class NotificationFactory {
     public static class EmailNotification implements Notification {
         @Override
         public String send(String message) {
-            // TODO: Retorne a mensagem formatada para email.
-            return null;
+            return "Email enviado com sucesso: " + message;
         }
     }
 
     public static class SMSNotification implements Notification {
         @Override
         public String send(String message) {
-            // TODO: Retorne a mensagem formatada para SMS.
-            return null;
+            return "SMS enviado com sucesso: " + message;
         }
     }
 
@@ -46,7 +44,13 @@ public class NotificationFactory {
     public Notification createNotification(Type type) {
         // TODO: Implemente o método de fábrica para instanciar a notificação correta com base no Type.
         // Se for passado um tipo nulo ou desconhecido, lance uma IllegalArgumentException.
-        
-        return null;
+        if (type == null) {
+            throw new IllegalArgumentException("Tipo de notificação nulo");
+        }
+        return switch (type) {
+            case EMAIL -> new EmailNotification();
+            case SMS -> new SMSNotification();
+            default -> throw new IllegalArgumentException("Tipo de notificação inválido: " + type);
+        };
     }
 }
