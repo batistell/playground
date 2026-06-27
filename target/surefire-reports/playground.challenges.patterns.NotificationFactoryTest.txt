@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: playground.challenges.patterns.NotificationFactoryTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! -- in playground.challenges.patterns.NotificationFactoryTest
-playground.challenges.patterns.NotificationFactoryTest.testFactoryMethod_SMS -- Time elapsed: 0.002 s <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in playground.challenges.patterns.NotificationFactoryTest
+playground.challenges.patterns.NotificationFactoryTest.testFactoryMethod_SMS -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -28,7 +28,7 @@ org.opentest4j.AssertionFailedError: expected: not <null>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-playground.challenges.patterns.NotificationFactoryTest.testFactoryMethod_Null -- Time elapsed: 0.002 s <<< FAILURE!
+playground.challenges.patterns.NotificationFactoryTest.testFactoryMethod_Null -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)

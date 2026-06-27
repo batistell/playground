@@ -10,24 +10,43 @@ Desafios focados no entendimento e implementação dos padrões clássicos do Go
 
 | ID | Nome do Desafio | Dificuldade | Status | Solução | Teste |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| DP01 | **Singleton** (Thread-Safe Lazy) | Fácil | 🟥 Pendente | [Singleton.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/Singleton.java) | [SingletonTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/SingletonTest.java) |
-| DP02 | **Factory Method** (Notificações) | Fácil | 🟥 Pendente | [NotificationFactory.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/NotificationFactory.java) | [NotificationFactoryTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/NotificationFactoryTest.java) |
-| DP03 | **Builder** (QueryBuilder SQL) | Médio | 🟥 Pendente | [QueryBuilder.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/QueryBuilder.java) | [QueryBuilderTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/QueryBuilderTest.java) |
-| DP04 | **Adapter** (XML para JSON Reader) | Médio | 🟥 Pendente | [AdapterPattern.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/AdapterPattern.java) | [AdapterPatternTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/AdapterPatternTest.java) |
-| DP05 | **Bridge** (Controle Remoto de Dispositivo) | Médio | 🟥 Pendente | [BridgePattern.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/BridgePattern.java) | [BridgePatternTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/BridgePatternTest.java) |
-| DP06 | **Decorator** (Formatadores de Texto HTML) | Médio | 🟥 Pendente | [DecoratorPattern.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/DecoratorPattern.java) | [DecoratorPatternTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/DecoratorPatternTest.java) |
-| DP07 | **Strategy** (Cálculo de Pagamentos) | Fácil | 🟥 Pendente | [StrategyPattern.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/StrategyPattern.java) | [StrategyPatternTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/StrategyPatternTest.java) |
-| DP08 | **Observer** (Publicador de Eventos) | Médio | 🟥 Pendente | [ObserverPattern.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/patterns/ObserverPattern.java) | [ObserverPatternTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/patterns/ObserverPatternTest.java) |
+| DP01 | **Singleton** (Thread-Safe Lazy) | Fácil | 🟥 Pendente | [Singleton.java](./src/main/java/playground/challenges/patterns/Singleton.java) | [SingletonTest.java](./src/test/java/playground/challenges/patterns/SingletonTest.java) |
+| DP02 | **Factory Method** (Notificações) | Fácil | 🟥 Pendente | [NotificationFactory.java](./src/main/java/playground/challenges/patterns/NotificationFactory.java) | [NotificationFactoryTest.java](./src/test/java/playground/challenges/patterns/NotificationFactoryTest.java) |
+| DP03 | **Builder** (QueryBuilder SQL) | Médio | 🟥 Pendente | [QueryBuilder.java](./src/main/java/playground/challenges/patterns/QueryBuilder.java) | [QueryBuilderTest.java](./src/test/java/playground/challenges/patterns/QueryBuilderTest.java) |
+| DP04 | **Adapter** (XML para JSON Reader) | Médio | 🟥 Pendente | [AdapterPattern.java](./src/main/java/playground/challenges/patterns/AdapterPattern.java) | [AdapterPatternTest.java](./src/test/java/playground/challenges/patterns/AdapterPatternTest.java) |
+| DP05 | **Bridge** (Controle Remoto de Dispositivo) | Médio | 🟥 Pendente | [BridgePattern.java](./src/main/java/playground/challenges/patterns/BridgePattern.java) | [BridgePatternTest.java](./src/test/java/playground/challenges/patterns/BridgePatternTest.java) |
+| DP06 | **Decorator** (Formatadores de Texto HTML) | Médio | 🟥 Pendente | [DecoratorPattern.java](./src/main/java/playground/challenges/patterns/DecoratorPattern.java) | [DecoratorPatternTest.java](./src/test/java/playground/challenges/patterns/DecoratorPatternTest.java) |
+| DP07 | **Strategy** (Cálculo de Pagamentos) | Fácil | 🟥 Pendente | [StrategyPattern.java](./src/main/java/playground/challenges/patterns/StrategyPattern.java) | [StrategyPatternTest.java](./src/test/java/playground/challenges/patterns/StrategyPatternTest.java) |
+| DP08 | **Observer** (Publicador de Eventos) | Médio | 🟥 Pendente | [ObserverPattern.java](./src/main/java/playground/challenges/patterns/ObserverPattern.java) | [ObserverPatternTest.java](./src/test/java/playground/challenges/patterns/ObserverPatternTest.java) |
 
 ---
 
-## 🧮 2. Algoritmos e Estruturas de Dados
+## 🕵️ 2. Desafios de Padrões Ocultos (Mystery Challenges)
+
+Desafios de design de software em que você deve descobrir qual padrão utilizar para resolver o problema descrito.
+
+| ID | Nome do Desafio | Dificuldade | Status | Solução | Teste |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| MC01 | **Configuração Central** | Fácil | 🟥 Pendente | [AppConfig.java](./src/main/java/playground/challenges/mystery/AppConfig.java) | [AppConfigTest.java](./src/test/java/playground/challenges/mystery/AppConfigTest.java) |
+| MC02 | **Exportador de Relatórios** | Fácil | 🟥 Pendente | [ReportGenerator.java](./src/main/java/playground/challenges/mystery/ReportGenerator.java) | [ReportGeneratorTest.java](./src/test/java/playground/challenges/mystery/ReportGeneratorTest.java) |
+| MC03 | **Filtros Dinâmicos de Imagem** | Médio | 🟥 Pendente | [ImageFilters.java](./src/main/java/playground/challenges/mystery/ImageFilters.java) | [ImageFiltersTest.java](./src/test/java/playground/challenges/mystery/ImageFiltersTest.java) |
+| MC04 | **Abstração de Mensagens** | Médio | 🟥 Pendente | [MultiChannelNotification.java](./src/main/java/playground/challenges/mystery/MultiChannelNotification.java) | [MultiChannelNotificationTest.java](./src/test/java/playground/challenges/mystery/MultiChannelNotificationTest.java) |
+| MC05 | **Integração de Gateway** | Médio | 🟥 Pendente | [PaymentGatewayIntegration.java](./src/main/java/playground/challenges/mystery/PaymentGatewayIntegration.java) | [PaymentGatewayIntegrationTest.java](./src/test/java/playground/challenges/mystery/PaymentGatewayIntegrationTest.java) |
+| MC06 | **Cálculo Tributário** | Fácil | 🟥 Pendente | [TaxCalculator.java](./src/main/java/playground/challenges/mystery/TaxCalculator.java) | [TaxCalculatorTest.java](./src/test/java/playground/challenges/mystery/TaxCalculatorTest.java) |
+| MC07 | **Feed de Notícias e Seguidores** | Médio | 🟥 Pendente | [UserNewsFeed.java](./src/main/java/playground/challenges/mystery/UserNewsFeed.java) | [UserNewsFeedTest.java](./src/test/java/playground/challenges/mystery/UserNewsFeedTest.java) |
+| MC08 | **Construção de Requisições HTTP** | Fácil | 🟥 Pendente | [HttpRequestBuilder.java](./src/main/java/playground/challenges/mystery/HttpRequestBuilder.java) | [HttpRequestBuilderTest.java](./src/test/java/playground/challenges/mystery/HttpRequestBuilderTest.java) |
+| MC09 | **Gravador de Logs Compartilhado** | Fácil | 🟥 Pendente | [SharedFileLogger.java](./src/main/java/playground/challenges/mystery/SharedFileLogger.java) | [SharedFileLoggerTest.java](./src/test/java/playground/challenges/mystery/SharedFileLoggerTest.java) |
+| MC10 | **Regras de Desconto** | Fácil | 🟥 Pendente | [DiscountProcessor.java](./src/main/java/playground/challenges/mystery/DiscountProcessor.java) | [DiscountProcessorTest.java](./src/test/java/playground/challenges/mystery/DiscountProcessorTest.java) |
+
+---
+
+## 🧮 3. Algoritmos e Estruturas de Dados
 
 Desafios sobre estruturas de dados, algoritmos clássicos de ordenação, grafos, programação dinâmica, etc.
 
 | ID | Nome do Desafio | Dificuldade | Status | Solução | Teste |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| AD01 | **Two Sum** (LeetCode #1) | Fácil | 🟩 Resolvido | [TwoSum.java](file:///o:/JavaProjects/playground/src/main/java/playground/challenges/TwoSum.java) | [TwoSumTest.java](file:///o:/JavaProjects/playground/src/test/java/playground/challenges/TwoSumTest.java) |
+| AD01 | **Two Sum** (LeetCode #1) | Fácil | 🟩 Resolvido | [TwoSum.java](./src/main/java/playground/challenges/TwoSum.java) | [TwoSumTest.java](./src/test/java/playground/challenges/TwoSumTest.java) |
 
 *(Novos desafios destas e de outras seções serão catalogados aqui conforme adicionados.)*
 

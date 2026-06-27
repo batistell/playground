@@ -32,4 +32,4 @@ mvn test
 
 1. Crie a classe do desafio no diretório `src/main/java/playground/challenges/`.
 2. Crie a classe de teste correspondente no diretório `src/test/java/playground/challenges/`.
-3. Adicione o novo desafio na tabela do arquivo [challenges.md](file:///o:/JavaProjects/playground/challenges.md) para controle.
+3. Adicione o novo desafio na tabela do arquivo [challenges.md](./challenges.md) para controle.

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: playground.challenges.patterns.SingletonTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! -- in playground.challenges.patterns.SingletonTest
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in playground.challenges.patterns.SingletonTest
 playground.challenges.patterns.SingletonTest.testSingleton_SameInstance -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: A instância não deve ser nula ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
@@ -14,7 +14,7 @@ org.opentest4j.AssertionFailedError: A instância não deve ser nula ==> expecte
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-playground.challenges.patterns.SingletonTest.testSingleton_ThreadSafety -- Time elapsed: 0.005 s <<< FAILURE!
+playground.challenges.patterns.SingletonTest.testSingleton_ThreadSafety -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Nenhuma instância retornada deve ser nula ==> expected: <0> but was: <10>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

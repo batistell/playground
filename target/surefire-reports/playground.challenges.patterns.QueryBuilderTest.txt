@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: playground.challenges.patterns.QueryBuilderTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in playground.challenges.patterns.QueryBuilderTest
-playground.challenges.patterns.QueryBuilderTest.testQueryBuilder_NoTableException -- Time elapsed: 0.007 s <<< FAILURE!
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! -- in playground.challenges.patterns.QueryBuilderTest
+playground.challenges.patterns.QueryBuilderTest.testQueryBuilder_NoTableException -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
