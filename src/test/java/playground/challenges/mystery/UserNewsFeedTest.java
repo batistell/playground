@@ -1,11 +1,14 @@
 package playground.challenges.mystery;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("MC07 - Feed de Notícias e Seguidores")
 public class UserNewsFeedTest {
 
     @Test
+    @DisplayName("Caso 1: Notificar seguidores inscritos quando publicar novo artigo")
     public void testFeed_SubscriptionAndPublishing() {
         UserNewsFeed.ContentCreator creator = new UserNewsFeed.ContentCreator("Alura");
         UserNewsFeed.UserFollower user1 = new UserNewsFeed.UserFollower("carlos");
@@ -24,6 +27,7 @@ public class UserNewsFeedTest {
     }
 
     @Test
+    @DisplayName("Caso 2: Não notificar seguidores que cancelaram a inscrição")
     public void testFeed_Unsubscribe() {
         UserNewsFeed.ContentCreator creator = new UserNewsFeed.ContentCreator("DevMedia");
         UserNewsFeed.UserFollower user = new UserNewsFeed.UserFollower("carlos");

@@ -1,11 +1,14 @@
 package playground.challenges.patterns;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("DP04 - Adapter (XML para JSON Reader)")
 public class AdapterPatternTest {
 
     @Test
+    @DisplayName("Caso 1: Adaptar leitura XML legada para a nova interface JSON")
     public void testXmlToJsonAdapter() {
         AdapterPattern.XmlReader xmlReader = new AdapterPattern.XmlReader();
         AdapterPattern.JsonParser parser = new AdapterPattern.XmlToJsonAdapter(xmlReader);

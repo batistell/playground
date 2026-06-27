@@ -1,14 +1,17 @@
 package playground.challenges.mystery;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("MC01 - Configuração Central")
 public class AppConfigTest {
 
     @Test
+    @DisplayName("Caso 1: Garantir que retorna a mesma instância da configuração")
     public void testAppConfig_SameInstance() {
         AppConfig c1 = AppConfig.getInstance();
         AppConfig c2 = AppConfig.getInstance();
@@ -18,6 +21,7 @@ public class AppConfigTest {
     }
 
     @Test
+    @DisplayName("Caso 2: Garantir unicidade sob múltiplas threads concorrentes")
     public void testAppConfig_ThreadSafety() throws InterruptedException {
         int threadCount = 8;
         ExecutorService service = Executors.newFixedThreadPool(threadCount);
@@ -41,6 +45,7 @@ public class AppConfigTest {
     }
 
     @Test
+    @DisplayName("Caso 3: Persistência de valores definidos na configuração")
     public void testAppConfig_StateRetention() {
         AppConfig config = AppConfig.getInstance();
         assertNotNull(config);

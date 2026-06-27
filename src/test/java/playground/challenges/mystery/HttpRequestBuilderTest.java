@@ -1,11 +1,14 @@
 package playground.challenges.mystery;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("MC08 - Construção de Requisições HTTP")
 public class HttpRequestBuilderTest {
 
     @Test
+    @DisplayName("Caso 1: Construir requisição POST completa com headers e body")
     public void testRequestBuilder_CompletePost() {
         HttpRequestBuilder.HttpRequest request = new HttpRequestBuilder.Builder()
                 .url("https://api.github.com/users")
@@ -24,6 +27,7 @@ public class HttpRequestBuilderTest {
     }
 
     @Test
+    @DisplayName("Caso 2: Construir requisição GET simples com método padrão")
     public void testRequestBuilder_DefaultGet() {
         HttpRequestBuilder.HttpRequest request = new HttpRequestBuilder.Builder()
                 .url("https://api.github.com/users/octocat")
@@ -37,6 +41,7 @@ public class HttpRequestBuilderTest {
     }
 
     @Test
+    @DisplayName("Caso 3: Lançar exceção se tentar construir requisição sem URL")
     public void testRequestBuilder_NoUrlException() {
         assertThrows(IllegalStateException.class, () -> {
             new HttpRequestBuilder.Builder().method("GET").build();

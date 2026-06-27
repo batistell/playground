@@ -1,11 +1,14 @@
 package playground.challenges.mystery;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("MC06 - Cálculo Tributário")
 public class TaxCalculatorTest {
 
     @Test
+    @DisplayName("Caso 1: Calcular imposto para o Brasil (15%)")
     public void testTax_Brazil() {
         TaxCalculator.Invoice invoice = new TaxCalculator.Invoice();
         invoice.setTaxRule(new TaxCalculator.BrazilTaxRule());
@@ -15,6 +18,7 @@ public class TaxCalculatorTest {
     }
 
     @Test
+    @DisplayName("Caso 2: Calcular imposto para os EUA (8%)")
     public void testTax_USA() {
         TaxCalculator.Invoice invoice = new TaxCalculator.Invoice();
         invoice.setTaxRule(new TaxCalculator.UsaTaxRule());
@@ -24,6 +28,7 @@ public class TaxCalculatorTest {
     }
 
     @Test
+    @DisplayName("Caso 3: Calcular imposto para a Europa (20%)")
     public void testTax_Europe() {
         TaxCalculator.Invoice invoice = new TaxCalculator.Invoice();
         invoice.setTaxRule(new TaxCalculator.EuropeTaxRule());
@@ -33,6 +38,7 @@ public class TaxCalculatorTest {
     }
 
     @Test
+    @DisplayName("Caso 4: Lançar exceção se tentar calcular fatura sem regra definida")
     public void testTax_NoRuleException() {
         TaxCalculator.Invoice invoice = new TaxCalculator.Invoice();
         assertThrows(IllegalStateException.class, () -> {

@@ -1,0 +1,22 @@
+# Arquivos de compilação do Java
+*.class
+
+# Diretórios de build (Maven)
+target/
+
+# IDEs e Editores
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.classpath
+.project
+.factorypath
+bin/
+
+# Sistema Operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

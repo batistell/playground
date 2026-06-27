@@ -1,11 +1,14 @@
 package playground.challenges.patterns;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("DP07 - Strategy (Cálculo de Pagamentos)")
 public class StrategyPatternTest {
 
     @Test
+    @DisplayName("Caso 1: Finalizar compra pagando com Cartão de Crédito")
     public void testStrategy_CreditCard() {
         StrategyPattern.ShoppingCart cart = new StrategyPattern.ShoppingCart();
         cart.addAmount(150);
@@ -16,6 +19,7 @@ public class StrategyPatternTest {
     }
 
     @Test
+    @DisplayName("Caso 2: Finalizar compra pagando com Pix")
     public void testStrategy_Pix() {
         StrategyPattern.ShoppingCart cart = new StrategyPattern.ShoppingCart();
         cart.addAmount(75);
@@ -26,6 +30,7 @@ public class StrategyPatternTest {
     }
 
     @Test
+    @DisplayName("Caso 3: Lançar exceção se tentar pagar sem definir uma estratégia")
     public void testStrategy_NoStrategyException() {
         StrategyPattern.ShoppingCart cart = new StrategyPattern.ShoppingCart();
         cart.addAmount(100);

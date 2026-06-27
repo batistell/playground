@@ -1,11 +1,14 @@
 package playground.challenges.patterns;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("DP08 - Observer (Publicador de Eventos)")
 public class ObserverPatternTest {
 
     @Test
+    @DisplayName("Caso 1: Inscrever observadores e disparar notificações de eventos")
     public void testObserver_SubscriptionAndNotification() {
         ObserverPattern.EventManager eventManager = new ObserverPattern.EventManager();
         ObserverPattern.EmailNotificationListener emailListener1 = new ObserverPattern.EmailNotificationListener("dev1@test.com");
@@ -27,6 +30,7 @@ public class ObserverPatternTest {
     }
 
     @Test
+    @DisplayName("Caso 2: Cancelar inscrição de observadores e interromper notificações")
     public void testObserver_Unsubscription() {
         ObserverPattern.EventManager eventManager = new ObserverPattern.EventManager();
         ObserverPattern.EmailNotificationListener emailListener = new ObserverPattern.EmailNotificationListener("test@test.com");
