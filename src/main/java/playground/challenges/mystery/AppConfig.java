@@ -20,12 +20,26 @@ public class AppConfig {
     private final Map<String, String> settings = new HashMap<>();
 
     // TODO: Defina as estruturas internas necessárias para controlar a instanciação única e thread-safe.
-
-    // TODO: Defina o construtor apropriado para evitar que instâncias sejam criadas de fora.
+    private static volatile AppConfig instance;
+    // TODO: Defina o construtor apropriado paa evitar que instâncias sejam criadas de fora.
+    private AppConfig() {
+        if (instance != null) {
+            throw new IllegalStateException("Instance already exists");
+        }
+    }
 
     public static AppConfig getInstance() {
         // TODO: Retorne a instância única e thread-safe.
-        return null;
+        AppConfig result = instance;
+        if (result == null) {
+            synchronized (AppConfig.class) {
+                result = instance;
+                if (result == null) {
+                    instance = result = new AppConfig();
+                }
+            }
+        }
+        return result;
     }
 
     public void set(String key, String value) {

@@ -34,6 +34,7 @@ public class ObserverPattern {
         @Override
         public void update(String eventType, String data) {
             // TODO: Atualize lastMessageReceived no formato: "Email enviado para " + email + " ref. evento " + eventType + ": " + data
+            this.lastMessageReceived = "Email enviado para " + email + " ref. evento " + eventType + ": " + data;
         }
 
         public String getLastMessageReceived() {
@@ -45,18 +46,33 @@ public class ObserverPattern {
     public static class EventManager {
         // TODO: Defina uma estrutura para mapear os tipos de eventos (ex: "open", "save") para os ouvintes correspondentes.
         private final Map<String, List<EventListener>> listeners = new HashMap<>();
+        
 
         public void subscribe(String eventType, EventListener listener) {
             // TODO: Adicione o ouvinte à lista associada ao eventType especificado.
+            if (!listeners.containsKey(eventType)) {
+                listeners.put(eventType, new ArrayList<>());
+            }
+            listeners.get(eventType).add(listener);
         }
 
         public void unsubscribe(String eventType, EventListener listener) {
             // TODO: Remova o ouvinte da lista associada ao eventType especificado.
+            if (!listeners.containsKey(eventType)) {
+                return;
+            }
+            listeners.get(eventType).remove(listener);
         }
 
         public void notify(String eventType, String data) {
             // TODO: Notifique todos os ouvintes inscritos para o tipo de evento (eventType)
             // chamando o método update(eventType, data) de cada um.
+            if (!listeners.containsKey(eventType)) {
+                return;
+            }
+            for (EventListener listener : listeners.get(eventType)) {
+                listener.update(eventType, data);
+            }
         }
     }
 }

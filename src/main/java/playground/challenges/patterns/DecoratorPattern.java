@@ -52,7 +52,7 @@ public class DecoratorPattern {
         @Override
         public String process(String text) {
             // TODO: Formate o texto aplicando a tag HTML correspondente à negrito.
-            return null;
+            return "<b>" + wrapper.process(text) + "</b>";
         }
     }
 
@@ -64,7 +64,7 @@ public class DecoratorPattern {
         @Override
         public String process(String text) {
             // TODO: Formate o texto aplicando a tag HTML correspondente à itálico.
-            return null;
+            return "<i>" + wrapper.process(text) + "</i>";
         }
     }
 }

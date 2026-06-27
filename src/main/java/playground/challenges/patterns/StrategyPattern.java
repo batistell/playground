@@ -26,7 +26,7 @@ public class StrategyPattern {
         @Override
         public String pay(int amount) {
             // TODO: Lógica de pagamento com Cartão de Crédito.
-            return null;
+            return "Pago R$ " + amount + " via Cartão de Crédito";
         }
     }
 
@@ -34,7 +34,7 @@ public class StrategyPattern {
         @Override
         public String pay(int amount) {
             // TODO: Lógica de pagamento com Pix.
-            return null;
+            return "Pago R$ " + amount + " via Pix";
         }
     }
 
@@ -54,8 +54,10 @@ public class StrategyPattern {
         public String checkout() {
             // TODO: Execute o pagamento usando a estratégia configurada.
             // Lance um IllegalStateException se nenhuma estratégia foi definida.
-            
-            return null;
+            if (strategy == null) {
+                throw new IllegalStateException("Nenhuma estratégia de pagamento foi definida.");
+            }
+            return strategy.pay(totalAmount);
         }
     }
 }

@@ -15,9 +15,9 @@ Desafios focados no entendimento e implementação dos padrões clássicos do Go
 | DP03 | **Builder** (QueryBuilder SQL) | Médio | 🟩 Resolvido | [QueryBuilder.java](./src/main/java/playground/challenges/patterns/QueryBuilder.java) | [QueryBuilderTest.java](./src/test/java/playground/challenges/patterns/QueryBuilderTest.java) |
 | DP04 | **Adapter** (XML para JSON Reader) | Médio | 🟩 Resolvido | [AdapterPattern.java](./src/main/java/playground/challenges/patterns/AdapterPattern.java) | [AdapterPatternTest.java](./src/test/java/playground/challenges/patterns/AdapterPatternTest.java) |
 | DP05 | **Bridge** (Controle Remoto de Dispositivo) | Médio | 🟩 Resolvido | [BridgePattern.java](./src/main/java/playground/challenges/patterns/BridgePattern.java) | [BridgePatternTest.java](./src/test/java/playground/challenges/patterns/BridgePatternTest.java) |
-| DP06 | **Decorator** (Formatadores de Texto HTML) | Médio | 🟥 Pendente | [DecoratorPattern.java](./src/main/java/playground/challenges/patterns/DecoratorPattern.java) | [DecoratorPatternTest.java](./src/test/java/playground/challenges/patterns/DecoratorPatternTest.java) |
-| DP07 | **Strategy** (Cálculo de Pagamentos) | Fácil | 🟥 Pendente | [StrategyPattern.java](./src/main/java/playground/challenges/patterns/StrategyPattern.java) | [StrategyPatternTest.java](./src/test/java/playground/challenges/patterns/StrategyPatternTest.java) |
-| DP08 | **Observer** (Publicador de Eventos) | Médio | 🟥 Pendente | [ObserverPattern.java](./src/main/java/playground/challenges/patterns/ObserverPattern.java) | [ObserverPatternTest.java](./src/test/java/playground/challenges/patterns/ObserverPatternTest.java) |
+| DP06 | **Decorator** (Formatadores de Texto HTML) | Médio | 🟩 Resolvido | [DecoratorPattern.java](./src/main/java/playground/challenges/patterns/DecoratorPattern.java) | [DecoratorPatternTest.java](./src/test/java/playground/challenges/patterns/DecoratorPatternTest.java) |
+| DP07 | **Strategy** (Cálculo de Pagamentos) | Fácil | 🟩 Resolvido | [StrategyPattern.java](./src/main/java/playground/challenges/patterns/StrategyPattern.java) | [StrategyPatternTest.java](./src/test/java/playground/challenges/patterns/StrategyPatternTest.java) |
+| DP08 | **Observer** (Publicador de Eventos) | Médio | 🟩 Resolvido | [ObserverPattern.java](./src/main/java/playground/challenges/patterns/ObserverPattern.java) | [ObserverPatternTest.java](./src/test/java/playground/challenges/patterns/ObserverPatternTest.java) |
 
 ---
 
