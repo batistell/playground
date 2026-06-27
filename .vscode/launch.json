@@ -21,8 +21,7 @@
             "type": "java",
             "name": "Executar Todos os Testes (JUnit)",
             "request": "launch",
-            "mainClass": "org.junit.platform.console.ConsoleLauncher",
-            "args": "--scan-classpath",
+            "mainClass": "playground.TestChecklist",
             "projectName": "playground",
             "classPaths": [
                 "$Runtime",
