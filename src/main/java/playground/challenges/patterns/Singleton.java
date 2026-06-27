@@ -12,10 +12,14 @@ package playground.challenges.patterns;
  */
 public class Singleton {
 
+    
     // TODO: Defina o campo estático para armazenar a instância única da classe.
     // Dica: Use a palavra-chave volatile para garantir a visibilidade entre threads.
+    private static volatile Singleton singleton;
     
     // TODO: Crie um construtor privado para evitar a instanciação externa direta.
+    private Singleton() {
+    }
 
     public static Singleton getInstance() {
         // TODO: Implemente a lógica Double-Checked Locking para retornar a instância única.
@@ -23,7 +27,12 @@ public class Singleton {
         // 2. Se for nula, sincronize no bloco Singleton.class.
         // 3. Dentro da sincronização, verifique novamente se a instância é nula antes de criá-la.
         
-        return null; // Altere este retorno para a instância correta.
+        synchronized (Singleton.class) {
+            if (singleton == null) {
+                singleton = new Singleton();
+            }
+        }
+        return singleton;
     }
     
     // Um contador simples de testes para validar a instância única

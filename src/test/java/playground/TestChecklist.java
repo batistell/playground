@@ -33,32 +33,32 @@ public class TestChecklist {
 
     private static class ChecklistListener implements TestExecutionListener {
         // Class display name -> Map of Method display name -> TestResult
-        // Ordenacao customizada:
-        // 1. Descobrir o tipo (MC - Mystery Challenges) no topo (peso 0)
-        // 2. Ensinam o tipo (DP - Design Patterns) no meio (peso 1)
-        // 3. Algoritmo Two Sum (AD) por ultimo (peso 2)
+        // Ordenacao: Ordem inversa da listagem em challenges.md
         private final Map<String, Map<String, TestResult>> testSuiteResults = new TreeMap<>(new Comparator<String>() {
+            private final List<String> ORDER = Arrays.asList(
+                "DP01", "DP02", "DP03", "DP04", "DP05", "DP06", "DP07", "DP08",
+                "MC01", "MC02", "MC03", "MC04", "MC05", "MC06", "MC07", "MC08", "MC09", "MC10",
+                "AD01"
+            );
+
             @Override
             public int compare(String s1, String s2) {
-                int w1 = getWeight(s1);
-                int w2 = getWeight(s2);
-                if (w1 != w2) {
-                    return Integer.compare(w1, w2);
-                }
-                return s1.compareTo(s2);
+                int idx1 = getOrderIndex(s1);
+                int idx2 = getOrderIndex(s2);
+                
+                // Ordem inversa: maior index na lista original vem primeiro
+                return Integer.compare(idx2, idx1);
             }
 
-            private int getWeight(String s) {
-                if (s.contains("MC")) {
-                    return 0; // Desafios de descobrir o tipo (Mystery Challenges)
+            private int getOrderIndex(String s) {
+                if (s != null && s.length() >= 4) {
+                    String prefix = s.substring(0, 4);
+                    int idx = ORDER.indexOf(prefix);
+                    if (idx != -1) {
+                        return idx;
+                    }
                 }
-                if (s.contains("DP")) {
-                    return 1; // Desafios de Design Patterns que ensinam o tipo
-                }
-                if (s.contains("AD") || s.contains("Two Sum")) {
-                    return 2; // Algoritmos (Two Sum) por ultimo
-                }
-                return 3; // Fallback
+                return -1;
             }
         });
 
