@@ -4,6 +4,16 @@ Este repositório é dedicado ao treino, estudo e resolução de desafios de pro
 
 Aqui são implementadas soluções para problemas de plataformas conhecidas como LeetCode, HackerRank, Beecrowd, entre outras.
 
+## 📊 Progresso dos Desafios
+
+Você pode acompanhar a lista completa e o status detalhado de cada desafio em [challenges.md](./challenges.md).
+
+* **Padrões de Projeto (GoF):** 5 / 8 resolvidos 🟩
+* **Desafios de Padrões Ocultos (Mystery):** 0 / 10 resolvidos 🟥
+* **Algoritmos e Estruturas de Dados:** 1 / 1 resolvidos 🟩
+
+**Total Resolvido:** 6 / 19 desafios.
+
 ## 🚀 Estrutura do Projeto
 
 O projeto é estruturado utilizando **Maven** para gerenciamento de dependências e **JUnit 5** para a automação de testes das soluções:

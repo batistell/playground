@@ -22,14 +22,11 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        // TODO: Implemente a lógica Double-Checked Locking para retornar a instância única.
-        // 1. Verifique se a instância é nula.
-        // 2. Se for nula, sincronize no bloco Singleton.class.
-        // 3. Dentro da sincronização, verifique novamente se a instância é nula antes de criá-la.
-        
-        synchronized (Singleton.class) {
-            if (singleton == null) {
-                singleton = new Singleton();
+        if (singleton == null) {
+            synchronized (Singleton.class) {
+                if (singleton == null) {
+                    singleton = new Singleton();
+                }
             }
         }
         return singleton;
