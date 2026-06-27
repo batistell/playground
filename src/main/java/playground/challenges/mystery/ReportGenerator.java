@@ -31,7 +31,7 @@ public class ReportGenerator {
         @Override
         public String generate(String title, String content) {
             // TODO: Lógica do relatório PDF.
-            return null;
+            return "[PDF Report] Title: " + title + " | Content: " + content;
         }
     }
 
@@ -39,7 +39,7 @@ public class ReportGenerator {
         @Override
         public String generate(String title, String content) {
             // TODO: Lógica do relatório CSV.
-            return null;
+            return "[CSV Report] Title: " + title + " | Content: " + content;
         }
     }
 
@@ -47,14 +47,25 @@ public class ReportGenerator {
         @Override
         public String generate(String title, String content) {
             // TODO: Lógica do relatório HTML.
-            return null;
+            return "[HTML Report] Title: " + title + " | Content: " + content;
         }
     }
 
     public Report createReport(Format format) {
         // TODO: Implemente o mecanismo que retorna a instância de Report correta de acordo com o Format informado.
         // Lance uma IllegalArgumentException caso o formato fornecido seja nulo.
-        
-        return null;
+        if (format == null) {
+            throw new IllegalArgumentException("Format cannot be null");
+        }
+        switch (format) {
+            case PDF:
+                return new PdfReport();
+            case CSV:
+                return new CsvReport();
+            case HTML:
+                return new HtmlReport();
+            default:
+                throw new IllegalArgumentException("Unknown format: " + format);
+        }
     }
 }
