@@ -41,8 +41,9 @@ public class AdapterPattern {
             //    Para este exercício simples, assuma que você extrairá o valor de "data" (ex: "conteudo").
             // 2. Chame o método readXml da classe XmlReader com esse valor extraído.
             // 3. Simule a conversão do resultado XML retornado pelo XmlReader de volta para um formato JSON (ex: {"xmlData": "<xml>conteudo</xml>"}) e retorne-o.
-            
-            return null;
+                        String data = json.replaceAll(".*\"data\"\\s*:\\s*\"([^\"]*)\".*", "$1");
+            String xml = xmlReader.readXml(data);
+            return "{\"xmlData\":\"" + xml + "\"}";
         }
     }
 }

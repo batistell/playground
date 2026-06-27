@@ -27,18 +27,19 @@ public class QueryBuilder {
     }
 
     public QueryBuilder select(String... cols) {
-        // TODO: Adicione as colunas à lista interna.
-        // Dica: Trate o caso de multiplas chamadas ou argumentos vazios.
+        for (String col : cols) {
+            this.columns.add(col);
+        }
         return this;
     }
 
     public QueryBuilder from(String tbl) {
-        // TODO: Defina a tabela de origem da consulta.
+        this.table = tbl;
         return this;
     }
 
     public QueryBuilder where(String cond) {
-        // TODO: Defina a condição da cláusula WHERE.
+        this.condition = cond;
         return this;
     }
 
@@ -48,7 +49,20 @@ public class QueryBuilder {
         // 2. Se a tabela não for definida (from nulo ou vazio), lance um IllegalStateException.
         // 3. Monte a query garantindo o espaçamento correto. Se WHERE não for fornecido, não adicione a cláusula WHERE.
         // Exemplo esperado: "SELECT name, age FROM users WHERE age > 18"
-        
-        return null;
+        if (table == null || table.isEmpty()) {
+            throw new IllegalStateException("Tabela não definida");
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("SELECT ");
+        if (columns.isEmpty()) {
+            sb.append("*");
+        } else {
+            sb.append(String.join(", ", columns));
+        }
+        sb.append(" FROM ").append(table);
+        if (condition != null && !condition.isEmpty()) {
+            sb.append(" WHERE ").append(condition);
+        }
+        return sb.toString();
     }
 }

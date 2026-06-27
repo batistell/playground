@@ -55,15 +55,19 @@ public class BridgePattern {
         }
 
         public void togglePower() {
-            // TODO: Se o dispositivo estiver ligado, desligue-o; caso contrário, ligue-o.
+            if (device.isEnabled()) {
+                device.disable();
+            } else {
+                device.enable();
+            }
         }
 
         public void volumeDown() {
-            // TODO: Diminua o volume do dispositivo em 10%.
+            device.setVolume(device.getVolume() - 10);
         }
 
         public void volumeUp() {
-            // TODO: Aumente o volume do dispositivo em 10%.
+            device.setVolume(device.getVolume() + 10);
         }
     }
 
@@ -75,7 +79,7 @@ public class BridgePattern {
         }
 
         public void mute() {
-            // TODO: Zere o volume do dispositivo.
+            device.setVolume(0);
         }
     }
 }
