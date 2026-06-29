@@ -59,7 +59,7 @@ public class MultiChannelNotification {
         @Override
         public String deliver(String content) {
             // TODO: Envie a mensagem no formato INFO.
-            return null;
+            return channel.sendRaw("INFO", content);
         }
     }
 
@@ -71,7 +71,7 @@ public class MultiChannelNotification {
         @Override
         public String deliver(String content) {
             // TODO: Envie a mensagem no formato ALERT com conteúdo em maiúsculo.
-            return null;
+            return channel.sendRaw("ALERT", content.toUpperCase());
         }
     }
 }

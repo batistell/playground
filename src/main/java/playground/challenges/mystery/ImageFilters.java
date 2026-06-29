@@ -38,7 +38,7 @@ public class ImageFilters {
         @Override
         public String apply(String img) {
             // TODO: Aplique o efeito Blur.
-            return null;
+            return "Blur(" + processor.apply(img) + ")";
         }
     }
 
@@ -53,7 +53,7 @@ public class ImageFilters {
         @Override
         public String apply(String img) {
             // TODO: Aplique o efeito Grayscale.
-            return null;
+            return "Grayscale(" + processor.apply(img) + ")";
         }
     }
 }
