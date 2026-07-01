@@ -1,4 +1,5 @@
 O:\JavaProjects\playground\src\main\java\playground\App.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\boticario\PairProgrammingBoticario.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\AppConfig.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\DiscountProcessor.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\HttpRequestBuilder.java
@@ -7,6 +8,7 @@ O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\MultiChan
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\PaymentGatewayIntegration.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\ReportGenerator.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\SharedFileLogger.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\SupermarketCheckout.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\TaxCalculator.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\mystery\UserNewsFeed.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\patterns\AdapterPattern.java
@@ -17,4 +19,12 @@ O:\JavaProjects\playground\src\main\java\playground\challenges\patterns\Observer
 O:\JavaProjects\playground\src\main\java\playground\challenges\patterns\QueryBuilder.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\patterns\Singleton.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\patterns\StrategyPattern.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\DatabaseConnection.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\DocumentCreator.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\LoggerIntegration.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\MultiChannelNotifier.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\ShapeRenderer.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\ShippingCalculator.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\VehicleAssembler.java
+O:\JavaProjects\playground\src\main\java\playground\challenges\practice\YoutubeSubscription.java
 O:\JavaProjects\playground\src\main\java\playground\challenges\TwoSum.java

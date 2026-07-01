@@ -44,29 +44,30 @@ public class HttpRequestBuilder {
         private String body;
 
         public Builder url(String url) {
-            // TODO: Configure a URL.
+            this.url = url;
             return this;
         }
 
         public Builder method(String method) {
-            // TODO: Configure o método (ex: GET, POST).
+            this.method = method;
             return this;
         }
 
         public Builder header(String key, String value) {
-            // TODO: Adicione um cabeçalho.
+            this.headers.put(key, value);
             return this;
         }
 
         public Builder body(String body) {
-            // TODO: Configure o corpo da requisição.
+            this.body = body;
             return this;
         }
 
         public HttpRequest build() {
-            // TODO: Instancie e retorne a requisição final.
-            // Lance um IllegalStateException se a URL não for fornecida (nula ou vazia).
-            return null;
+            if (url == null || url.trim().isEmpty()) {
+                throw new IllegalStateException("A URL é obrigatória para construir a requisição HTTP.");
+            }
+            return new HttpRequest(url, method, new HashMap<>(headers), body);
         }
     }
 }

@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: playground.challenges.patterns.AdapterPatternTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in playground.challenges.patterns.AdapterPatternTest
-playground.challenges.patterns.AdapterPatternTest.testXmlToJsonAdapter -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: O resultado retornado pelo adaptador não deve ser nulo ==> expected: not <null>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
-	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
-	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:312)
-	at playground.challenges.patterns.AdapterPatternTest.testXmlToJsonAdapter(AdapterPatternTest.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in playground.challenges.patterns.AdapterPatternTest

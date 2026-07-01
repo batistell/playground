@@ -28,23 +28,20 @@ public class DiscountProcessor {
     public static class BlackFridayDiscount implements DiscountPolicy {
         @Override
         public double applyDiscount(double originalPrice) {
-            // TODO: Lógica Black Friday.
-            return 0.0;
+            return originalPrice * 0.20;
         }
     }
 
     public static class ChristmasDiscount implements DiscountPolicy {
         @Override
         public double applyDiscount(double originalPrice) {
-            // TODO: Lógica Natal.
-            return 0.0;
+            return originalPrice > 200.0 ? 50.0 : 0.0;
         }
     }
 
     public static class FlatDiscount implements DiscountPolicy {
         @Override
         public double applyDiscount(double originalPrice) {
-            // TODO: Lógica Flat.
             return 0.0;
         }
     }
@@ -63,9 +60,9 @@ public class DiscountProcessor {
         }
 
         public double calculateFinalPrice() {
-            // TODO: Calcule o preço final subtraindo o desconto da política ativa do preço original.
-            // Se nenhuma política foi fornecida, assuma que não há desconto (FlatDiscount).
-            return originalPrice;
+            DiscountPolicy policy = (discountPolicy != null) ? discountPolicy : new FlatDiscount();
+            double discount = policy.applyDiscount(originalPrice);
+            return originalPrice - discount;
         }
     }
 }

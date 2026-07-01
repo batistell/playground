@@ -36,9 +36,8 @@ public class PaymentGatewayIntegration {
 
         @Override
         public String charge(double value) {
-            // TODO: Formate o double como string com duas casas decimais e o caractere "$" no início (ex: 45.5 -> "$45.50").
-            // Chame o método makePayment do sdk e retorne o resultado.
-            return null;
+            String formatted = String.format(java.util.Locale.US, "$%.2f", value);
+            return sdk.makePayment(formatted);
         }
     }
 }

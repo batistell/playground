@@ -1,3 +1,4 @@
+O:\JavaProjects\playground\src\test\java\playground\challenges\boticario\PairProgrammingBoticarioTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\AppConfigTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\DiscountProcessorTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\HttpRequestBuilderTest.java
@@ -6,6 +7,7 @@ O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\MultiChan
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\PaymentGatewayIntegrationTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\ReportGeneratorTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\SharedFileLoggerTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\SupermarketCheckoutTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\TaxCalculatorTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\mystery\UserNewsFeedTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\patterns\AdapterPatternTest.java
@@ -16,5 +18,13 @@ O:\JavaProjects\playground\src\test\java\playground\challenges\patterns\Observer
 O:\JavaProjects\playground\src\test\java\playground\challenges\patterns\QueryBuilderTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\patterns\SingletonTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\patterns\StrategyPatternTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\DatabaseConnectionTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\DocumentCreatorTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\LoggerIntegrationTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\MultiChannelNotifierTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\ShapeRendererTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\ShippingCalculatorTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\VehicleAssemblerTest.java
+O:\JavaProjects\playground\src\test\java\playground\challenges\practice\YoutubeSubscriptionTest.java
 O:\JavaProjects\playground\src\test\java\playground\challenges\TwoSumTest.java
 O:\JavaProjects\playground\src\test\java\playground\TestChecklist.java

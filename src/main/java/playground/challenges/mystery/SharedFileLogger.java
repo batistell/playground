@@ -20,11 +20,19 @@ public class SharedFileLogger {
 
     private final List<String> logs = new ArrayList<>();
 
-    // TODO: Defina as estruturas estáticas e o construtor privado apropriados.
+    private static volatile SharedFileLogger instance;
+
+    private SharedFileLogger() {}
 
     public static SharedFileLogger getLogger() {
-        // TODO: Retorne a instância única e de forma thread-safe.
-        return null;
+        if (instance == null) {
+            synchronized (SharedFileLogger.class) {
+                if (instance == null) {
+                    instance = new SharedFileLogger();
+                }
+            }
+        }
+        return instance;
     }
 
     public synchronized void log(String message) {

@@ -30,24 +30,21 @@ public class TaxCalculator {
     public static class BrazilTaxRule implements TaxRule {
         @Override
         public double calculateTax(double amount) {
-            // TODO: Lógica de taxa para o Brasil.
-            return 0.0;
+            return amount * 0.15;
         }
     }
 
     public static class UsaTaxRule implements TaxRule {
         @Override
         public double calculateTax(double amount) {
-            // TODO: Lógica de taxa para os EUA.
-            return 0.0;
+            return amount * 0.08;
         }
     }
 
     public static class EuropeTaxRule implements TaxRule {
         @Override
         public double calculateTax(double amount) {
-            // TODO: Lógica de taxa para a Europa.
-            return 0.0;
+            return amount * 0.20;
         }
     }
 
@@ -60,10 +57,10 @@ public class TaxCalculator {
         }
 
         public double calculateTotal(double amount) {
-            // TODO: Calcule o valor do imposto usando a regra configurada.
-            // Lance um IllegalStateException se a regra tributária não for informada.
-            // Retorne o valor do imposto calculado.
-            return 0.0;
+            if (taxRule == null) {
+                throw new IllegalStateException("Regra tributária não configurada.");
+            }
+            return taxRule.calculateTax(amount);
         }
     }
 }

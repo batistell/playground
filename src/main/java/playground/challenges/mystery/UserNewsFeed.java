@@ -32,7 +32,7 @@ public class UserNewsFeed {
 
         @Override
         public void receiveNotification(String creatorName, String articleTitle) {
-            // TODO: Adicione ao feed a mensagem: creatorName + " publicou: " + articleTitle
+            feed.add(creatorName + " publicou: " + articleTitle);
         }
 
         public List<String> getFeed() {
@@ -51,15 +51,19 @@ public class UserNewsFeed {
         }
 
         public void follow(Follower follower) {
-            // TODO: Inscreva o seguidor.
+            if (follower != null && !followers.contains(follower)) {
+                followers.add(follower);
+            }
         }
 
         public void unfollow(Follower follower) {
-            // TODO: Cancele a inscrição do seguidor.
+            followers.remove(follower);
         }
 
         public void publishArticle(String title) {
-            // TODO: Notifique todos os seguidores sobre a publicação do novo artigo com o título informado.
+            for (Follower follower : followers) {
+                follower.receiveNotification(name, title);
+            }
         }
     }
 }

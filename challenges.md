@@ -31,12 +31,13 @@ Desafios de design de software em que você deve descobrir qual padrão utilizar
 | MC02 | **Exportador de Relatórios** | Fácil | 🟩 Resolvido | [ReportGenerator.java](./src/main/java/playground/challenges/mystery/ReportGenerator.java) | [ReportGeneratorTest.java](./src/test/java/playground/challenges/mystery/ReportGeneratorTest.java) |
 | MC03 | **Filtros Dinâmicos de Imagem** | Médio | 🟩 Resolvido | [ImageFilters.java](./src/main/java/playground/challenges/mystery/ImageFilters.java) | [ImageFiltersTest.java](./src/test/java/playground/challenges/mystery/ImageFiltersTest.java) |
 | MC04 | **Abstração de Mensagens** | Médio | 🟩 Resolvido | [MultiChannelNotification.java](./src/main/java/playground/challenges/mystery/MultiChannelNotification.java) | [MultiChannelNotificationTest.java](./src/test/java/playground/challenges/mystery/MultiChannelNotificationTest.java) |
-| MC05 | **Integração de Gateway** | Médio | 🟥 Pendente | [PaymentGatewayIntegration.java](./src/main/java/playground/challenges/mystery/PaymentGatewayIntegration.java) | [PaymentGatewayIntegrationTest.java](./src/test/java/playground/challenges/mystery/PaymentGatewayIntegrationTest.java) |
-| MC06 | **Cálculo Tributário** | Fácil | 🟥 Pendente | [TaxCalculator.java](./src/main/java/playground/challenges/mystery/TaxCalculator.java) | [TaxCalculatorTest.java](./src/test/java/playground/challenges/mystery/TaxCalculatorTest.java) |
-| MC07 | **Feed de Notícias e Seguidores** | Médio | 🟥 Pendente | [UserNewsFeed.java](./src/main/java/playground/challenges/mystery/UserNewsFeed.java) | [UserNewsFeedTest.java](./src/test/java/playground/challenges/mystery/UserNewsFeedTest.java) |
-| MC08 | **Construção de Requisições HTTP** | Fácil | 🟥 Pendente | [HttpRequestBuilder.java](./src/main/java/playground/challenges/mystery/HttpRequestBuilder.java) | [HttpRequestBuilderTest.java](./src/test/java/playground/challenges/mystery/HttpRequestBuilderTest.java) |
-| MC09 | **Gravador de Logs Compartilhado** | Fácil | 🟥 Pendente | [SharedFileLogger.java](./src/main/java/playground/challenges/mystery/SharedFileLogger.java) | [SharedFileLoggerTest.java](./src/test/java/playground/challenges/mystery/SharedFileLoggerTest.java) |
-| MC10 | **Regras de Desconto** | Fácil | 🟥 Pendente | [DiscountProcessor.java](./src/main/java/playground/challenges/mystery/DiscountProcessor.java) | [DiscountProcessorTest.java](./src/test/java/playground/challenges/mystery/DiscountProcessorTest.java) |
+| MC05 | **Integração de Gateway** | Médio | 🟩 Resolvido | [PaymentGatewayIntegration.java](./src/main/java/playground/challenges/mystery/PaymentGatewayIntegration.java) | [PaymentGatewayIntegrationTest.java](./src/test/java/playground/challenges/mystery/PaymentGatewayIntegrationTest.java) |
+| MC06 | **Cálculo Tributário** | Fácil | 🟩 Resolvido | [TaxCalculator.java](./src/main/java/playground/challenges/mystery/TaxCalculator.java) | [TaxCalculatorTest.java](./src/test/java/playground/challenges/mystery/TaxCalculatorTest.java) |
+| MC07 | **Feed de Notícias e Seguidores** | Médio | 🟩 Resolvido | [UserNewsFeed.java](./src/main/java/playground/challenges/mystery/UserNewsFeed.java) | [UserNewsFeedTest.java](./src/test/java/playground/challenges/mystery/UserNewsFeedTest.java) |
+| MC08 | **Construção de Requisições HTTP** | Fácil | 🟩 Resolvido | [HttpRequestBuilder.java](./src/main/java/playground/challenges/mystery/HttpRequestBuilder.java) | [HttpRequestBuilderTest.java](./src/test/java/playground/challenges/mystery/HttpRequestBuilderTest.java) |
+| MC09 | **Gravador de Logs Compartilhado** | Fácil | 🟩 Resolvido | [SharedFileLogger.java](./src/main/java/playground/challenges/mystery/SharedFileLogger.java) | [SharedFileLoggerTest.java](./src/test/java/playground/challenges/mystery/SharedFileLoggerTest.java) |
+| MC10 | **Regras de Desconto** | Fácil | 🟩 Resolvido | [DiscountProcessor.java](./src/main/java/playground/challenges/mystery/DiscountProcessor.java) | [DiscountProcessorTest.java](./src/test/java/playground/challenges/mystery/DiscountProcessorTest.java) |
+| MC11 | **Caixa de Supermercado** | Fácil | 🟩 Resolvido | [SupermarketCheckout.java](./src/main/java/playground/challenges/mystery/SupermarketCheckout.java) | [SupermarketCheckoutTest.java](./src/test/java/playground/challenges/mystery/SupermarketCheckoutTest.java) |
 
 ---
 
@@ -57,3 +58,31 @@ Desafios sobre estruturas de dados, algoritmos clássicos de ordenação, grafos
 * 🟥 **Pendente**: Desafio identificado, com esqueleto de código e testes criados, mas a implementação ainda não foi feita.
 * 🟨 **Em Progresso**: Implementação iniciada ou com testes pendentes de sucesso.
 * 🟩 **Resolvido**: Solução completa e todos os testes unitários passando.
+
+---
+
+## 🏋️ 4. Prática Oculta de Padrões (Mystery Practice)
+
+Exercícios práticos onde você deve identificar e aplicar o padrão de design correto sem que o nome dele seja revelado.
+
+| ID | Nome do Desafio | Dificuldade | Status | Solução | Teste |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| PT01 | **Acesso a Banco** | Fácil | 🟥 Pendente | [DatabaseConnection.java](./src/main/java/playground/challenges/practice/DatabaseConnection.java) | [DatabaseConnectionTest.java](./src/test/java/playground/challenges/practice/DatabaseConnectionTest.java) |
+| PT02 | **Criador de Documentos** | Fácil | 🟥 Pendente | [DocumentCreator.java](./src/main/java/playground/challenges/practice/DocumentCreator.java) | [DocumentCreatorTest.java](./src/test/java/playground/challenges/practice/DocumentCreatorTest.java) |
+| PT03 | **Montador de Veículos** | Médio | 🟥 Pendente | [VehicleAssembler.java](./src/main/java/playground/challenges/practice/VehicleAssembler.java) | [VehicleAssemblerTest.java](./src/test/java/playground/challenges/practice/VehicleAssemblerTest.java) |
+| PT04 | **Integração de Logs** | Médio | 🟥 Pendente | [LoggerIntegration.java](./src/main/java/playground/challenges/practice/LoggerIntegration.java) | [LoggerIntegrationTest.java](./src/test/java/playground/challenges/practice/LoggerIntegrationTest.java) |
+| PT05 | **Sistema Gráfico** | Médio | 🟥 Pendente | [ShapeRenderer.java](./src/main/java/playground/challenges/practice/ShapeRenderer.java) | [ShapeRendererTest.java](./src/test/java/playground/challenges/practice/ShapeRendererTest.java) |
+| PT06 | **Sistema de Notificação** | Médio | 🟥 Pendente | [MultiChannelNotifier.java](./src/main/java/playground/challenges/practice/MultiChannelNotifier.java) | [MultiChannelNotifierTest.java](./src/test/java/playground/challenges/practice/MultiChannelNotifierTest.java) |
+| PT07 | **Cálculo de Frete** | Fácil | 🟥 Pendente | [ShippingCalculator.java](./src/main/java/playground/challenges/practice/ShippingCalculator.java) | [ShippingCalculatorTest.java](./src/test/java/playground/challenges/practice/ShippingCalculatorTest.java) |
+| PT08 | **Canal de Conteúdo** | Médio | 🟥 Pendente | [YoutubeSubscription.java](./src/main/java/playground/challenges/practice/YoutubeSubscription.java) | [YoutubeSubscriptionTest.java](./src/test/java/playground/challenges/practice/YoutubeSubscriptionTest.java) |
+
+---
+
+## 🤝 5. Desafios do Boticário (Pair Programming)
+
+Exercícios customizados para dinâmicas de pair programming.
+
+| ID | Nome do Desafio | Dificuldade | Status | Solução | Teste |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| PP01 | **Pair Programming Boticário** | Médio | 🟥 Pendente | [PairProgrammingBoticario.java](./src/main/java/playground/challenges/boticario/PairProgrammingBoticario.java) | [PairProgrammingBoticarioTest.java](./src/test/java/playground/challenges/boticario/PairProgrammingBoticarioTest.java) |
+

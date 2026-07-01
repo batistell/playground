@@ -36,6 +36,7 @@ public class TestChecklist {
         // Ordenacao: Ordem inversa da listagem em challenges.md
         private final Map<String, Map<String, TestResult>> testSuiteResults = new TreeMap<>(new Comparator<String>() {
             private final List<String> ORDER = Arrays.asList(
+                "PT01", "PT02", "PT03", "PT04", "PT05", "PT06", "PT07", "PT08",
                 "DP01", "DP02", "DP03", "DP04", "DP05", "DP06", "DP07", "DP08",
                 "MC01", "MC02", "MC03", "MC04", "MC05", "MC06", "MC07", "MC08", "MC09", "MC10",
                 "AD01"
