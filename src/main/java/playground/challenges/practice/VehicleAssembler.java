@@ -45,7 +45,7 @@ public class VehicleAssembler {
     public static class Builder {
         private String model;
         private String engine;
-        private String color;
+        private String color = "Branco";
         private boolean hasAirConditioning;
         private boolean hasSunroof;
 
@@ -81,6 +81,8 @@ public class VehicleAssembler {
 
         public Vehicle build() {
             // TODO: Valide os parâmetros obrigatórios e retorne o Vehicle final.
+            if (model == null ||
+            engine == null) throw new IllegalStateException();
             return new Vehicle(model,
                     engine,
                     color,

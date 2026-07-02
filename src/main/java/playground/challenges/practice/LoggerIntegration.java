@@ -29,17 +29,19 @@ public class LoggerIntegration {
 
     // TODO: Implemente a classe LoggerAdapter abaixo para adaptar o LegacyLoggerSDK para a interface AuditLogger.
     public static class LoggerAdapter implements AuditLogger {
-        
+        LegacyLoggerSDK legacyLogger;
         // TODO: Declare o construtor e guarde a referência necessária.
         public LoggerAdapter(LegacyLoggerSDK legacyLogger) {
             // Implemente.
+            this.legacyLogger = legacyLogger;
         }
 
         @Override
         public String log(String level, String msg) {
             // TODO: Formate a mensagem de entrada como: "[" + level + "] " + msg
             // Chame o método logInfo da classe legacyLogger passando o texto formatado e retorne o resultado.
-            return null;
+            String msgFormatted = "[" + level + "] " + msg;
+            return legacyLogger.logInfo(msgFormatted);
         }
     }
 }
