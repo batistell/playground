@@ -31,29 +31,33 @@ public class MultiChannelNotifier {
     // 2. PushNotifier: Deve delegar ao Notifier interno e adicionar " [Push]" ao final.
 
     public static class SmsNotifier implements Notifier {
-        
+
+        private final Notifier wrapped;
+
         // TODO: Declare o construtor necessário.
         public SmsNotifier(Notifier wrapped) {
-            // Implemente.
+            this.wrapped = wrapped;
         }
 
         @Override
         public String send(String msg) {
-            // TODO: Implemente.
+            wrapped.send(msg + "[SMS]");
             return null;
         }
     }
 
     public static class PushNotifier implements Notifier {
-        
+
+        private final Notifier wrapped;
+
         // TODO: Declare o construtor necessário.
         public PushNotifier(Notifier wrapped) {
-            // Implemente.
+            this.wrapped = wrapped;
         }
 
         @Override
         public String send(String msg) {
-            // TODO: Implemente.
+            wrapped.send(msg + "[Push]");
             return null;
         }
     }

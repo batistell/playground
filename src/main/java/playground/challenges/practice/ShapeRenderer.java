@@ -62,32 +62,34 @@ public class ShapeRenderer {
     // para inicializar a Forma com o Renderer correspondente e executar o desenho delegando ao renderer.
 
     public static class CircleShape extends Shape {
-        
+        private final int radius;
+
         // TODO: Declare as propriedades e o construtor necessário.
         public CircleShape(int radius, Renderer renderer) {
             super(renderer);
-            // Implemente.
+            this.radius = radius;
         }
 
         @Override
         public String draw() {
             // TODO: Desenhe o círculo usando o renderizador configurado.
-            return null;
+            return renderer.renderCircle(radius);
         }
     }
 
     public static class SquareShape extends Shape {
-        
+        private final int side;
+
         // TODO: Declare as propriedades e o construtor necessário.
         public SquareShape(int side, Renderer renderer) {
             super(renderer);
-            // Implemente.
+            this.side = side;
         }
 
         @Override
         public String draw() {
             // TODO: Desenhe o quadrado usando o renderizador configurado.
-            return null;
+            return renderer.renderSquare(side);
         }
     }
 }
