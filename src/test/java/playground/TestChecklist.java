@@ -38,8 +38,8 @@ public class TestChecklist {
             private final List<String> ORDER = Arrays.asList(
                 "PT01", "PT02", "PT03", "PT04", "PT05", "PT06", "PT07", "PT08",
                 "DP01", "DP02", "DP03", "DP04", "DP05", "DP06", "DP07", "DP08",
-                "MC01", "MC02", "MC03", "MC04", "MC05", "MC06", "MC07", "MC08", "MC09", "MC10",
-                "AD01"
+                "MC01", "MC02", "MC03", "MC04", "MC05", "MC06", "MC07", "MC08", "MC09", "MC10", "MC11",
+                "AD01", "PP01"
             );
 
             @Override
@@ -47,8 +47,11 @@ public class TestChecklist {
                 int idx1 = getOrderIndex(s1);
                 int idx2 = getOrderIndex(s2);
                 
-                // Ordem inversa: maior index na lista original vem primeiro
-                return Integer.compare(idx2, idx1);
+                if (idx1 != idx2) {
+                    // Ordem inversa: maior index na lista original vem primeiro
+                    return Integer.compare(idx2, idx1);
+                }
+                return s1.compareTo(s2);
             }
 
             private int getOrderIndex(String s) {

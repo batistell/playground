@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Desafio Boticário - Pair Programming")
+@DisplayName("PP01 - Desafio Boticário - Pair Programming")
 public class PairProgrammingBoticarioTest {
 
     @Test
