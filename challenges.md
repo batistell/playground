@@ -67,9 +67,9 @@ Exercícios práticos onde você deve identificar e aplicar o padrão de design 
 
 | ID | Nome do Desafio | Dificuldade | Status | Solução | Teste |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| PT01 | **Acesso a Banco** | Fácil | 🟥 Pendente | [DatabaseConnection.java](./src/main/java/playground/challenges/practice/DatabaseConnection.java) | [DatabaseConnectionTest.java](./src/test/java/playground/challenges/practice/DatabaseConnectionTest.java) |
-| PT02 | **Criador de Documentos** | Fácil | 🟥 Pendente | [DocumentCreator.java](./src/main/java/playground/challenges/practice/DocumentCreator.java) | [DocumentCreatorTest.java](./src/test/java/playground/challenges/practice/DocumentCreatorTest.java) |
-| PT03 | **Montador de Veículos** | Médio | 🟥 Pendente | [VehicleAssembler.java](./src/main/java/playground/challenges/practice/VehicleAssembler.java) | [VehicleAssemblerTest.java](./src/test/java/playground/challenges/practice/VehicleAssemblerTest.java) |
+| PT01 | **Acesso a Banco** | Fácil | 🟩 Resolvido | [DatabaseConnection.java](./src/main/java/playground/challenges/practice/DatabaseConnection.java) | [DatabaseConnectionTest.java](./src/test/java/playground/challenges/practice/DatabaseConnectionTest.java) |
+| PT02 | **Criador de Documentos** | Fácil | 🟩 Resolvido | [DocumentCreator.java](./src/main/java/playground/challenges/practice/DocumentCreator.java) | [DocumentCreatorTest.java](./src/test/java/playground/challenges/practice/DocumentCreatorTest.java) |
+| PT03 | **Montador de Veículos** | Médio | 🟨 Em Progresso | [VehicleAssembler.java](./src/main/java/playground/challenges/practice/VehicleAssembler.java) | [VehicleAssemblerTest.java](./src/test/java/playground/challenges/practice/VehicleAssemblerTest.java) |
 | PT04 | **Integração de Logs** | Médio | 🟥 Pendente | [LoggerIntegration.java](./src/main/java/playground/challenges/practice/LoggerIntegration.java) | [LoggerIntegrationTest.java](./src/test/java/playground/challenges/practice/LoggerIntegrationTest.java) |
 | PT05 | **Sistema Gráfico** | Médio | 🟥 Pendente | [ShapeRenderer.java](./src/main/java/playground/challenges/practice/ShapeRenderer.java) | [ShapeRendererTest.java](./src/test/java/playground/challenges/practice/ShapeRendererTest.java) |
 | PT06 | **Sistema de Notificação** | Médio | 🟥 Pendente | [MultiChannelNotifier.java](./src/main/java/playground/challenges/practice/MultiChannelNotifier.java) | [MultiChannelNotifierTest.java](./src/test/java/playground/challenges/practice/MultiChannelNotifierTest.java) |
@@ -84,5 +84,5 @@ Exercícios customizados para dinâmicas de pair programming.
 
 | ID | Nome do Desafio | Dificuldade | Status | Solução | Teste |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| PP01 | **Pair Programming Boticário** | Médio | 🟥 Pendente | [PairProgrammingBoticario.java](./src/main/java/playground/challenges/boticario/PairProgrammingBoticario.java) | [PairProgrammingBoticarioTest.java](./src/test/java/playground/challenges/boticario/PairProgrammingBoticarioTest.java) |
+| PP01 | **Pair Programming Boticário** | Médio | 🟨 Em Progresso | [PairProgrammingBoticario.java](./src/main/java/playground/challenges/boticario/PairProgrammingBoticario.java) | [PairProgrammingBoticarioTest.java](./src/test/java/playground/challenges/boticario/PairProgrammingBoticarioTest.java) |
 

@@ -43,35 +43,49 @@ public class VehicleAssembler {
     // - O modelo e motor são obrigatórios (lance IllegalStateException no build() se não forem fornecidos).
     // - A cor padrão deve ser "Branco" e os booleanos falsos se não forem definidos.
     public static class Builder {
-        
+        private String model;
+        private String engine;
+        private String color;
+        private boolean hasAirConditioning;
+        private boolean hasSunroof;
+
         public Builder model(String model) {
             // TODO: Configure o modelo.
+            this.model = model;
             return this;
         }
 
         public Builder engine(String engine) {
             // TODO: Configure o motor.
+            this.engine = engine;
             return this;
         }
 
         public Builder color(String color) {
             // TODO: Configure a cor.
+            this.color = color;
             return this;
         }
 
-        public Builder airConditioning(boolean value) {
+        public Builder airConditioning(boolean hasAirConditioning) {
             // TODO: Configure ar-condicionado.
+            this.hasAirConditioning = hasAirConditioning;
             return this;
         }
 
-        public Builder sunroof(boolean value) {
+        public Builder sunroof(boolean hasSunroof) {
             // TODO: Configure teto-solar.
+            this.hasSunroof = hasSunroof;
             return this;
         }
 
         public Vehicle build() {
             // TODO: Valide os parâmetros obrigatórios e retorne o Vehicle final.
-            return null;
+            return new Vehicle(model,
+                    engine,
+                    color,
+                    hasAirConditioning,
+                    hasSunroof);
         }
     }
 }

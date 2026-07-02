@@ -12,8 +12,8 @@ public class PairProgrammingBoticarioTest {
     public void testCasoValido() {
         // TODO: Instancie a classe e valide o cenário de sucesso (ex: retorno true, objeto correto, etc.)
         // Exemplo:
-        // PairProgrammingBoticario challenge = new PairProgrammingBoticario();
-        // assertTrue(challenge.isValid("dado_valido"));
+        PairProgrammingBoticario challenge = new PairProgrammingBoticario();
+        assertTrue(challenge.isValid());
     }
 
     @Test

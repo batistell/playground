@@ -9,10 +9,12 @@ Aqui são implementadas soluções para problemas de plataformas conhecidas como
 Você pode acompanhar a lista completa e o status detalhado de cada desafio em [challenges.md](./challenges.md).
 
 * **Padrões de Projeto (GoF):** 8 / 8 resolvidos 🟩
-* **Desafios de Padrões Ocultos (Mystery):** 0 / 10 resolvidos 🟥
+* **Desafios de Padrões Ocultos (Mystery):** 11 / 11 resolvidos 🟩
 * **Algoritmos e Estruturas de Dados:** 1 / 1 resolvidos 🟩
+* **Prática Oculta de Padrões (Mystery Practice):** 2 / 8 resolvidos 🟨
+* **Desafios do Boticário (Pair Programming):** 0 / 1 resolvidos 🟥
 
-**Total Resolvido:** 9 / 19 desafios.
+**Total Resolvido:** 22 / 29 desafios.
 
 ## 🚀 Estrutura do Projeto
 

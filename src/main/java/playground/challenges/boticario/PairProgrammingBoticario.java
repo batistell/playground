@@ -9,6 +9,7 @@ public class PairProgrammingBoticario {
 
     // TODO: Adicione seus atributos e métodos aqui para resolver o desafio.
     public boolean isValid() {
-        return false;
+        System.out.println("test");
+        return true;
     }
 }
